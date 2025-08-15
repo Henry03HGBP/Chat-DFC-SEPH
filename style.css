@@ -218,7 +218,7 @@ form .name-details .field:last-child{
    overflow-y: auto;
 }
 
-.users-list::-webkit-scrollbar{
+:is(.users-list, .chat-box)::-webkit-scrollbar{
     width: 0px;
 }
 
@@ -247,7 +247,14 @@ form .name-details .field:last-child{
     font-size: 12px;
     color: green;
 }
- /* Usa este nombre de clase en PHP para mostrar el estado fuera de linea
-.users-list a .status-dot.offline{
+ /* Usa este nombre de clase en PHP para mostrar el estado fuera de linea */
+
+ .users-list a .status-dot.offline{
     color: #ccc;
+}
+
+/* Chat Area CSS */
+
+.chat-area header{
+    
 }
